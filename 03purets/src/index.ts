@@ -13,7 +13,7 @@
 
 
 class User {
-    private _courseCount=1;
+    protected _courseCount=1;
     private readonly city: string = ""
     constructor(public email: string,
         public name: string) {
@@ -42,6 +42,15 @@ class User {
 }
 
 const aman = new User("aman@aman.com", "Aman")
+
+
+class subUser extends User{
+    isFamily: boolean = true;
+    changeCourseCount(){
+        this._courseCount=4;
+        // protected member can be inherited in the child class
+    }
+}
 
 
 

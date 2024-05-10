@@ -35,3 +35,13 @@ class User {
     }
 }
 const aman = new User("aman@aman.com", "Aman");
+class subUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
+        // protected member can be inherited in the child class
+    }
+}
