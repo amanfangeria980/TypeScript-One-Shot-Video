@@ -55,3 +55,5 @@ function isAdminAccount(account) {
         return account.isAdmin;
     }
 }
+// Instanceof and Type Predicates
+// Discriminated Unions & Exhaustiveness Checking with never

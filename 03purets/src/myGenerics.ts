@@ -99,5 +99,10 @@ function isAdminAccount(account: User | Admin){
     if("isAdmin" in account){
         return account.isAdmin;
     }
-
 }
+
+
+// Instanceof and Type Predicates
+
+// Discriminated Unions & Exhaustiveness Checking with never
+
