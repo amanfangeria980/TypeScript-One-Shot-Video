@@ -26,3 +26,32 @@ const getMoreSearchProducts = (products) => {
     const index = 4;
     return products[index];
 };
+// following function can also extend Database interface
+function anotherFunction(valOne, valTwo) {
+    return {
+        valOne,
+        valTwo
+    };
+}
+anotherFunction(3, 4.6);
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(product) {
+        this.cart.push(product);
+    }
+}
+// narrowing
+function provideId(id) {
+    if (!id) {
+        console.log("Please provide ID");
+        return;
+    }
+    id.toLowerCase();
+}
+function isAdminAccount(account) {
+    if ("isAdmin" in account) {
+        return account.isAdmin;
+    }
+}
